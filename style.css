@@ -70,7 +70,7 @@ svg {
     max-width: 100%;
 }
 
-/* Styles */
+/* Result styles */
 body {
     font-family: var(--font-family-default);
     font-size: var(--fs-400);
@@ -150,4 +150,36 @@ body {
     .result{
         border-radius: var(--border-radius);
     }
+}
+
+.result-score {
+    display: grid;
+    width: 12rem;
+    margin-inline: auto;
+    background: var(--gradient-to-transparent);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.result-score span {
+    display: block;
+    font-size: var(--fs-900);
+    font-weight: var(--fw-black);
+    color: var(--crl-neutral-100);
+    line-height: 1;
+}
+
+.result-rank {
+    color: var(--crl-neutral-100);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+}
+
+/* Summary styles */
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
 }
